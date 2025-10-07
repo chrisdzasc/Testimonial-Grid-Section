@@ -15,14 +15,172 @@
 
 html {
     font-size: 62.5%; /* 10 pixels = 1rem */
+    box-sizing: border-box;
+    height: 100%;
 }
 
 *, *::before, *::after {
-    /* margin: 0;
+    margin: 0;
     padding: 0;
-    box-sizing: border-box; */
+    box-sizing: border-box;
 }
 
 body {
     font-family: "Barlow Semi Condensed", sans-serif;
+    background-color: #F6F5F6;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+.content {
+    display: grid;
+    gap: 3.2rem;
+    width: 81.3%;
+    margin: 0 auto;
+}
+
+.section {
+    padding: 3.2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+    border-radius: .8rem;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.section-01 {
+    background-color: var(--purple500);
+}
+
+.section-02 {
+    background-color: var(--grey500);
+}
+
+.section-03 {
+    background-color: var(--white);
+}
+
+.section-04 {
+    background-color: var(--darkBlue);
+}
+
+.section-05 {
+    background-color: var(--white);
+}
+
+.profile {
+    display: flex;
+    gap: 1.7rem;
+}
+
+.image-fluid {
+    border: .4rem solid var(--purple300);
+    border-radius: 100%;
+    width: 2.8rem;
+    height: 2.8rem;
+    overflow: hidden;
+}
+
+.image-fluid-02,
+.image-fluid-03,
+.image-fluid-05 {
+    border: none;
+}
+
+.image-fluid img,
+.image-fluid source {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.person {
+    display: flex;
+    flex-direction: column;
+    gap: .4rem;
+}
+
+.name {
+    font-size: 1.3rem;
+    font-weight: 500;
+    line-height: 110%;
+    color: var(--white);
+}
+
+.name-03 {
+    color: var(--grey500);
+    line-height: 130%;
+}
+
+.name-05 {
+    color: var(--grey500);
+    line-height: 130%;
+}
+
+.graduate {
+    font-size: 1.1rem;
+    font-weight: 500;
+    line-height: 110%;
+    color: var(--purple50);
+}
+
+.graduate-02 {
+    color: var(--purple300);
+}
+
+.graduate-03 {
+    color: var(--grey400);
+}
+
+.graduate-04 {
+    color: var(--white);
+}
+
+.graduate-05 {
+    color: var(--grey500);
+}
+
+.quote {
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 120%;
+    color: var(--white);
+}
+
+.quote-03 {
+    color: var(--grey500);
+}
+
+.quote-04 {
+    color: var(--grey200);
+}
+
+.quote-05 {
+    color: var(--grey500);
+}
+
+.description {
+    font-size: 1.3rem;
+    font-weight: 500;
+    line-height: 140%;
+    color: var(--purple50);
+}
+
+.description-02 {
+    color: var(--grey100);
+}
+
+.description-03 {
+    color: var(--grey400);
+}
+
+.description-04 {
+    color: var(--grey100);
+}
+
+.description-05 {
+    color: var(--grey400);
 }
