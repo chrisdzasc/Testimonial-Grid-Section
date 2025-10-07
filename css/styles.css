@@ -42,6 +42,12 @@ body {
     margin: 0 auto;
 }
 
+@media screen and (min-width: 768px) {
+    .content {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
 .section {
     padding: 3.2rem;
     display: flex;
@@ -53,6 +59,12 @@ body {
 
 .section-01 {
     background-color: var(--purple500);
+}
+
+@media screen and (min-width: 768px) {
+    .section-01 {
+        grid-column: 1 / span 2;
+    }
 }
 
 .section-02 {
@@ -67,8 +79,20 @@ body {
     background-color: var(--darkBlue);
 }
 
+@media screen and (min-width: 768px) {
+    .section-04 {
+        grid-column: 1 / span 2;
+    }
+}
+
 .section-05 {
     background-color: var(--white);
+}
+
+@media screen and (min-width: 768px) {
+    .section-05 {
+        grid-column: 1 / span 2;
+    }
 }
 
 .profile {
